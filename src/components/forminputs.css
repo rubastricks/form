@@ -1,0 +1,29 @@
+input {
+   
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+} 
+input:focus{
+    outline: 0;
+  } 
+
+ label{
+    display:block;
+    color: #777;
+ } 
+ span{
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+} 
+input:invalid[focused="true"]{
+    border: 1px solid red;
+} 
+input:invalid[focused="true"] ~ span{
+    display: block;
+} 
